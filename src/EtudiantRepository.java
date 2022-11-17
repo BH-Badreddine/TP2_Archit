@@ -4,10 +4,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class EtudiantRepository {
+public class EtudiantRepository implements IEtudiant {
 	
-	
-	void add(Etudiant E) throws SQLException
+	@Override
+	public void add(Etudiant E) throws SQLException
 	{
 		
 		DBConnection BD= DBConnection.getInstance();
@@ -26,8 +26,8 @@ public class EtudiantRepository {
 		//connect.close();
 	 }
 
-
-	boolean Exists(String email) throws SQLException	
+    @Override
+	public boolean Exists(String email) throws SQLException	
 	{
 		DBConnection BD= DBConnection.getInstance();
 		Connection connect= BD.getConn();
@@ -46,7 +46,8 @@ public class EtudiantRepository {
 		return false;
 	}
 	
-	boolean Exists(int mat) throws SQLException	
+    @Override
+	public boolean Exists(int mat) throws SQLException	
 	{
 		DBConnection BD= DBConnection.getInstance();
 		Connection connect= BD.getConn();

@@ -10,10 +10,6 @@ public class MainApp {
 		try {
 			serv.inscription(2, "Guendouziiiii", "wassila", "guen@gmail.com","xxxx", 1);
 			
-			
-			//Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/egybest","root","");
-			//System.out.println("success");
-			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,4 +1,3 @@
-import java.sql.SQLException;
 import java.sql.*;
 
 public class MainApp {
@@ -10,6 +9,7 @@ public class MainApp {
 		EtudiantService serv=new EtudiantService();
 		try {
 			serv.inscription(2, "Guendouziiiii", "wassila", "guen@gmail.com","xxxx", 1);
+			
 			
 			//Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/egybest","root","");
 			//System.out.println("success");

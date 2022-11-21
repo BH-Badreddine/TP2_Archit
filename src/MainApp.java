@@ -6,7 +6,11 @@ public class MainApp {
 		// TODO Auto-generated method stub
 
         //Attention!!!!Il faut démarrer Wampserver pour que la connection marche
+		
 		EtudiantService serv=new EtudiantService();
+		serv.setEtudRep(new EtudiantRepository());
+		serv.setUnivRep(new UniversiteRepository());
+		
 		try {
 			serv.inscription(2, "Guendouziiiii", "wassila", "guen@gmail.com","xxxx", 1);
 			

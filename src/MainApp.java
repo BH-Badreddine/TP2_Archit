@@ -17,9 +17,15 @@ public class MainApp {
 		jTemp.addJournal(new ScreenDetailJourn());
 		serv.setJournal(jTemp);
 		
+		int matricule = 2;
+		String email = "guen@gmail.com";
+		
 		try {
-			serv.inscription(2, "Guendouziiiii", "wassila", "guen@gmail.com","xxxx", 1);
-			
+			if (!serv.getStudRep().Exists(matricule,serv.getJournal()) && !serv.getStudRep().Exists(email, serv.getJournal()))
+		    {
+				serv.inscription(matricule, "Guendouziiiii", "wassila", email,"xxxx", 1);
+		    }
+		    	
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

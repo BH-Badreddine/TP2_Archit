@@ -2,3 +2,12 @@ LogBD : début recherche de id université dans la base de donnée
 LogBD : université récupérée
 Log: début de l'opération d'ajout de l'étudiant avec matricule 2
 logBD--- :etudiant avec ce matricule existe déja dans la BD  2
+logBD--- :etudiant avec ce matricule existe déja dans la BD  2
+logBD--- :etudiant avec ce matricule existe déja dans la BD  2
+logBD----: etudiant avec ce matricule n'existe pas 5
+logBD--- : email n'existe pas uen@gmail.com
+LogBD : début recherche de id université dans la base de donnée
+LogBD : université récupérée
+Log: début de l'opération d'ajout de l'étudiant avec matricule 5
+log : ajout dans la BD réussi de l'étudiant  du Matricule5
+Log: Fin de l'opération d'ajout de l'étudiant avec matricule 5

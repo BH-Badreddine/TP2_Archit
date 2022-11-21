@@ -16,7 +16,10 @@ public class Etudiant {
 			this.matricule = matricule;
 			this.nom = nom;
 			this.prenom = prenom;
-			this.email = email;
+			if(email != null && email.length() != 0)
+		    {
+				this.email = email;
+		    }
 			this.pwd = pwd;
 			this.id_universite = id_universite;
 		}

@@ -34,13 +34,16 @@ public class EtudiantService {
 	    
 	    j.outPut_Msg("Log: début de l'opération d'ajout de l'étudiant avec matricule "+matricule);
 	    
+	    IPackage pack;
 		 if (univ.getPack() == TypePackage.Standard)
 	     {
-	          stud.setNbLivreMensuel_Autorise(10);
+			  pack = new Standard();
+	          stud.setNbLivreMensuel_Autorise(pack.getNbrLivreAutorise());
 	     }
 	     else if (univ.getPack() == TypePackage.Premium)
 	     {
-	    	 stud.setNbLivreMensuel_Autorise(10*2);
+	    	 pack = new Premium();
+	    	 stud.setNbLivreMensuel_Autorise(pack.getNbrLivreAutorise());
 	     }                           
 	     
 		 StudRep.add(stud, j);

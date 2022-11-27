@@ -25,6 +25,7 @@ public class MainApp {
 		    {
 				serv.inscription(matricule, "Guendouziiiii", "wassila", email,"xxxx", 1);
 		    }
+			serv.ajouterBonus();
 		    	
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

@@ -109,11 +109,11 @@ public class Etudiant {
 		
 			if (univ.getPack() == TypePackage.Standard)
 		     {
-				this.nbLivreMensuel_Autorise += 5 ;
+				setNbLivreMensuel_Autorise(this.getNbLivreMensuel_Autorise() + 5) ;
 		     }
 		     else if (univ.getPack() == TypePackage.Premium)
 		     {
-		    	 this.nbLivreMensuel_Autorise += 10 ;
+		    	 setNbLivreMensuel_Autorise(this.getNbLivreMensuel_Autorise() + 10) ;
 		     }                           
 			
 		}

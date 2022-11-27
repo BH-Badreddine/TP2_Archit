@@ -51,6 +51,14 @@ public class EtudiantService {
 		
 	}
 	
+	public void ajouterBonus() throws SQLException {
+		ArrayList<Etudiant> etudiants = StudRep.getEtudiants();
+		
+		for(Etudiant e : etudiants) {
+			Universite univ = UnivRep.GetById(e.getId_universite(), new ScreenJourn());
+			e.giveBonus(univ);
+		}
+	}
 	
 	
 

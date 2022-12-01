@@ -110,7 +110,7 @@ public class ViewInscription extends JFrame implements IViewInscription {
 
      // Bouton valider
         
-        Image imgV = new ImageIcon("C:\\Users\\toshiba\\Desktop\\TPArchiGit\\TP2\\src\\valider.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT);
+        Image imgV = new ImageIcon("C:\\Users\\toshiba\\Desktop\\TPArchiGit\\TP2\\src\\valider.png").getImage().getScaledInstance(32, 32, Image.SCALE_DEFAULT);
 
         Icon iconV = new ImageIcon(imgV);
         this.valider = new JButton("valider" ,iconV);
@@ -119,7 +119,7 @@ public class ViewInscription extends JFrame implements IViewInscription {
 
      // Bouton annuler
 
-        Image imgA = new ImageIcon("C:\\Users\\toshiba\\Desktop\\TPArchiGit\\TP2\\src\\annuler.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT);
+        Image imgA = new ImageIcon("C:\\Users\\toshiba\\Desktop\\TPArchiGit\\TP2\\src\\annuler.png").getImage().getScaledInstance(32, 32, Image.SCALE_DEFAULT);
 
         Icon iconA= new ImageIcon(imgA);
         this.annuler = new JButton("Annuler",iconA);

@@ -1,3 +1,4 @@
+package InscriptionView;
 
 import javax.swing.JOptionPane;
 import java.awt.Component;

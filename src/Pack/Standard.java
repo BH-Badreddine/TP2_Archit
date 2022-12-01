@@ -1,13 +1,13 @@
-
-public class Premium implements IPackage {
+package Pack;
+public class Standard implements IPackage {
 	
 	@Override
 	public int getNbrLivreAutorise() {
-		return 20;
+		return 10;
 	}
 	
 	@Override
 	public int getBonus() {
-		return 10;
+		return 5;
 	}
 }

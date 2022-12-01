@@ -1,3 +1,4 @@
+package InscriptionView;
 import java.awt.event.ActionListener;
 
 public interface IViewInscription {

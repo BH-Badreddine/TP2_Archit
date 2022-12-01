@@ -1,3 +1,4 @@
+package Pack;
 
 public interface IPackage {
 	public int getNbrLivreAutorise();

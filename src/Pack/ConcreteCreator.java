@@ -1,3 +1,4 @@
+package Pack;
 
 public class ConcreteCreator extends AbstractFactory {
 	public IPackage getPackage(TypePackage typePackage) {

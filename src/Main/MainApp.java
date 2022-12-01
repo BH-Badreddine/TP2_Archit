@@ -1,4 +1,13 @@
+package Main;
 import java.sql.*;
+
+import Journal.FileJourn;
+import Journal.MultiJourn;
+import Journal.ScreenDetailJourn;
+import Journal.ScreenJourn;
+import Repository.EtudiantRepository;
+import Repository.UniversiteRepository;
+import Services.EtudiantService;
 
 public class MainApp {
 

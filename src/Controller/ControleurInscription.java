@@ -1,7 +1,11 @@
+package Controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
+
+import InscriptionView.IViewInscription;
+import Services.EtudiantService;
 
 public class ControleurInscription {
 

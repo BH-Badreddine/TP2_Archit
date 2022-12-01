@@ -1,3 +1,4 @@
+package Journal;
 import java.util.ArrayList;
 
 public class MultiJourn implements IJournal {

@@ -1,3 +1,4 @@
+package Repository;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -5,6 +6,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+
+import DB.DBConnection;
+import Journal.IJournal;
+import Services.Etudiant;
 
 public class EtudiantRepository implements IEtudiant {
 	

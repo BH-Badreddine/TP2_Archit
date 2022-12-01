@@ -35,7 +35,7 @@ public class EtudiantService {
 			return this.StudRep;
 		}
 		
-	public boolean inscription (int matricule, String nom, String prénom, String email,String pwd, int id_universite) throws SQLException	
+	public boolean inscription (int matricule, String nom, String prénom, String email,String pwd, int id_universite)	
 	{
 		
 	    Etudiant stud = new Etudiant(matricule, nom, prénom, email,pwd,id_universite);
@@ -55,7 +55,7 @@ public class EtudiantService {
 		
 	}
 	
-	public void ajouterBonus() throws SQLException {
+	public void ajouterBonus() {
 		ArrayList<Etudiant> etudiants = StudRep.getEtudiants();
 		
 		for(Etudiant e : etudiants) {

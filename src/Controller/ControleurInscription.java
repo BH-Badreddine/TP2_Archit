@@ -34,21 +34,14 @@ public class ControleurInscription {
 
 			if(viewInscription.champsValides()) {
 				
-				try {
+				if(etudService.inscription(Integer.valueOf(viewInscription.Get_Mat()), viewInscription.Get_Name(), viewInscription.Get_Prenom(), viewInscription.Get_email(),viewInscription.Get_pwd(), Integer.valueOf(viewInscription.Get_id_univ()))) {
 
-					if(etudService.inscription(Integer.valueOf(viewInscription.Get_Mat()), viewInscription.Get_Name(), viewInscription.Get_Prenom(), viewInscription.Get_email(),viewInscription.Get_pwd(), Integer.valueOf(viewInscription.Get_id_univ()))) {
+					viewInscription.DisplayDialog("Inscription réussie !");
+					viewInscription.Reset_Champs();
 
-						viewInscription.DisplayDialog("Inscription réussie !");
-						viewInscription.Reset_Champs();
+				}else {
+					viewInscription.DisplayErreur("Inscription non réussie !");
 
-					}else {
-						viewInscription.DisplayErreur("Inscription non réussie !");
-
-					}
-
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				}
 			}
 

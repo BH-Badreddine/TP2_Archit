@@ -5,5 +5,5 @@ import Journal.IJournal;
 import Services.Universite;
 
 public interface IUniversite {
-	public Universite GetById(int universityId,  IJournal j) throws SQLException;
+	public Universite GetById(int universityId,  IJournal j);
 }

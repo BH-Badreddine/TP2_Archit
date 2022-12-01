@@ -17,7 +17,7 @@ class TestInscription {
 	
 	EtudiantService serv;
 	@BeforeEach
-	void setUp() throws Exception {
+	void setUp() {
 		serv=new EtudiantService();
 		serv.setEtudRep(new EtudiantRepository());
 		serv.setUnivRep(new UniversiteRepository());
@@ -25,8 +25,9 @@ class TestInscription {
 	}
 
 	@Test
-	void test() throws SQLException {
-		boolean response = serv.inscription(10, "Bengaid", "Badro", "test@gmail.com","*****", 1);
+	void test() {
+		boolean response = false;
+		response = serv.inscription(10, "Bengaid", "Badro", "test@gmail.com","*****", 1);
 		assertEquals(true,response);
 	}
 

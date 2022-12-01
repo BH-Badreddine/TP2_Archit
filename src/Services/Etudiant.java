@@ -110,7 +110,7 @@ public class Etudiant {
 			this.pwd = pwd;
 		}
 		
-		public void giveBonus(Universite univ) throws SQLException {
+		public void giveBonus(Universite univ){
 			
 			AbstractFactory AF = new ConcreteCreator();
 		    IPackage pack = AF.getPackage(univ.getPack());

@@ -5,14 +5,14 @@ import java.sql.SQLException;
 
 public class ControleurInscription {
 
-	private ViewInscription viewInscription;
+	private IViewInscription viewInscription;
 	private EtudiantService etudService;
 	
-	public ViewInscription getView() {
+	public IViewInscription getView() {
 		return this.viewInscription;
 	}
 
-	public ControleurInscription(ViewInscription viewInscription,EtudiantService etudService) {
+	public ControleurInscription(IViewInscription viewInscription,EtudiantService etudService) {
 
 		this.viewInscription = viewInscription;
 		this.etudService = etudService;

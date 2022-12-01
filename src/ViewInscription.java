@@ -22,7 +22,7 @@ import javax.swing.JFrame;
 
 
 
-public class ViewInscription extends JFrame {
+public class ViewInscription extends JFrame implements IViewInscription {
     private JFrame Jframe;
     private JPanel Panel;
     private JTextField Matricule;
@@ -127,32 +127,32 @@ public class ViewInscription extends JFrame {
         this.Panel.add(annuler); 
        
     }
-    
+    @Override
     public String Get_Mat() {
         return this.Matricule.getText();
     }
-   
+    @Override
     public String Get_Name() {
         return this.Nom.getText();
     }
-    
+    @Override
     public String Get_Prenom() {
         return this.Prenom.getText();
     }
-    
+    @Override
     public String Get_email() {
         return this.Email.getText();
     }
 
-    
+    @Override
 	public String Get_pwd() {
         return this.Pwd.getText();
     }
-    
+    @Override
     public String Get_id_univ() {
         return this.UnivId.getText();
     }
-    
+    @Override
     public boolean champsValides() {
         if (Get_Mat().isEmpty() || Get_Prenom().isEmpty() || Get_Name().isEmpty() || Get_email().isEmpty() || Get_pwd().isEmpty() || Get_id_univ().isEmpty()) {
             this.DisplayErreur("Veuillez remplir tous les champs!");
@@ -169,23 +169,24 @@ public class ViewInscription extends JFrame {
         return true;
     }
 
-    
+    @Override
     public void DisplayForm() { 
         this.Create();
         this.Jframe.setVisible(true);
     }
-    
+    @Override
     public void addValiderListener(ActionListener listenForCalcButton) {
     	valider.addActionListener(listenForCalcButton);
     }
-    
+    @Override
     public void addAnnulerListener(ActionListener listenForCalcButton) {
     	annuler.addActionListener(listenForCalcButton);
     }
+    @Override
     public void Annuler_Inscription() {
         this.Jframe.dispose();
     }
-    
+    @Override
     public void Reset_Champs() {
         this.Matricule.setText("");
         this.Nom.setText("");
@@ -195,11 +196,11 @@ public class ViewInscription extends JFrame {
         this.UnivId.setText("");
     }
 
-    
+    @Override
     public void DisplayDialog(final String msg) {
         JOptionPane.showMessageDialog(this, msg);
     }
-    
+    @Override
     public void DisplayErreur(final String msg) {
         JOptionPane.showMessageDialog(this, msg, "Erreur", 0);
     }
